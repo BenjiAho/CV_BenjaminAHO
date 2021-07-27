@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap">
+</head>
+<body id="body_contact">
+      <header id="header">
+        <div id="container">
+          <a href="../index.html" title="DevFromAn0therWorld"><img src="../assets/img/logo_entreprise.gif" id="logo" alt="HOME"/></a>
+            <h1 id="grand_titre">Contact</h1>
+
+            <div><img id="image_profil" src="./css/images/image_profil.png" alt="logo"></div>
+            <!--<p id="nom">Benjamin AHO-NIENNE</p>-->
+        </div>
+      </header> 
+      
+        <!-- The dropdown starts here... -->
+      <div id="mobile_navbar" class="c">
+        <div class="dd">
+          <div class="dd-a"><span>Menu</span></div>
+          <input type="checkbox">
+          <div class="dd-c">
+            <ul>
+              <li><a href="cv_ben.html"><span>CV</span></a></li>
+              <li><a href="hobby_ben.html"><span>Hobby</span></a></li>
+              <li><a href="video_ben.html"><span>Vidéo</span></a></li>
+              <li><a href="contact_ben.html"><span>Contact</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <!-- ...and ends here. -->
+     
+      <nav>
+
+        <div class="a-group">
+          <a href="cv_ben.html">CV</a>
+          <a href="hobby_ben.html">Hobby</a>
+          <a href="video_ben.html">Vidéo</a>
+          <a href="contact_ben.html">Contact</a>
+        </div>
+
+      </nav>
+      <div id="form_container">
+        <div class="formulaire">
+          <form action="https://httpbin.org/get" method="GET">
+        
+            <label for="fname">Nom de famille</label>
+            <input type="text" id="fname" name="Nom" placeholder="Votre nom de famille.." required>
+            
+            
+
+            <label for="lname">Prénom</label>
+            <input type="text" id="lname" name="prenom" placeholder="votre prenom..." required>
+            <label for="email">Entrez votre email:</label>
+
+            <input type="email" id="email"
+                   size="30" required>
+            <!--radio-->
+            <p>Votre genre:</p>
+            <div>
+              <input type="radio" id="homme" name="radio" value="homme"
+                    >
+              <label for="homme">homme</label>
+            
+            
+            
+              <input type="radio" id="femme" name="radio" value="femmme">
+              <label for="femme">femme</label>
+            
+            
+            
+              <input type="radio" id="nope" name="radio" value="ne_souhaite_pas_répondre">
+              <label for="nope">Ne souhaite pas répondre</label>
+            </div>
+            <!--fin radio-->
+            <label for="pays">Pays</label>
+            <select id="pays" name="pays">
+              <option value="france">France</option>
+              <option value="dom/tom">dom/tom</option>
+              <option value="overseas">overseas</option>
+              <option value="pays des bisounours">pays des bisounours</option>
+              <option value="somewhere over the raindow">somewhere over the raindow</option>
+              <option value="somewhere where we belong">somewhere where we belong</option>
+              <option value="pays des merveilles">pays des merveilles</option>
+              <option value="sous l'escalier">sous l'escalier</option>
+              <option value="corée du nord">corée du nord</option>
+              <option value="de la cave">de la cave</option>
+              
+            </select>
+        
+            <label for="sujet">Sujet</label>
+            <textarea id="sujet" name="sujet" placeholder="Écrivez-nous =D.." style="height:200px" required></textarea>
+        
+            <input type="submit" value="Envoyer">
+        
+          </form>
+        </div>
+      </div>
+      <footer>
+        <p>
+          | All rights reserved © 2021 Benjamin AHO-NIENNE |
+        </p>
+      </footer>
+
+</body>
+</html>
